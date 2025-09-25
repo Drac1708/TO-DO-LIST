@@ -1,0 +1,9 @@
+/todo-app/
+│
+├── app.py
+├── tasks.db  ← auto-created
+├── static/
+│   ├── style.css
+│   └── script.js
+└── templates/
+    └── index.html

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>TaskFlow</h1>
+
+    <form id="taskForm">
+      <input type="text" name="title" placeholder="Title" required />
+      <input type="text" name="description" placeholder="Description" />
+      <label for="due_date">Due Date</label>
+      <input type="date" id="due_date" name="due_date" required placeholder="YYYY-MM-DD" title="Enter due date" />
+      <label for="due_time">Due Time</label>
+      <input type="time" id="due_time" name="due_time" required placeholder="HH:MM" title="Enter due time" />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="columns">
+      <div class="column" id="today">
+        <h2>Today</h2>
+        <ul></ul>
+      </div>
+      <div class="column" id="upcoming">
+        <h2>Upcoming</h2>
+        <ul></ul>
+      </div>
+      <div class="column" id="completed">
+        <h2>Completed</h2>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
